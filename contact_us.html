@@ -16,6 +16,12 @@
 		<li><a href="contact_us.html"><img src="images/ContactUs.png" alt="Contact_us"></a></li>
 	    </ul>
 	</header>
+	<script>
+	    window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0);
+	    })
+	</script>
 <body>
     <div class="concontainer">
         <h1>Contact us</h1>
