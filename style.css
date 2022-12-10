@@ -252,11 +252,9 @@ header ul li a img{
 }
 /*Inventory*/
 .posts-container{
-    box-sizing: border-box;
-    padding-left: 30%; 
-    line-height: 1.5;
     width: 90vw;
     margin: 0 auto;
+    padding: 40px 0;
 }
 .posts-container > h2{
     text-align: center;
@@ -269,16 +267,16 @@ header ul li a img{
     opacity: 0.7;
     text-align: center;
 }
-.sidebar .filter-container .category-head{
+.category-head{
     margin: 30px 0;
 }
-.sidebar .filter-container .category-head ul{
+.category-head ul{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.sidebar .filter-container .category-title{
+.category-title{
     flex: 0 0 calc(16.6667% - 10px);
     display: flex;
     justify-content:center;
@@ -289,15 +287,17 @@ header ul li a img{
     cursor: pointer;
     transition: all 0.4s ease;
 }
-.sidebar .filter-container .category-title:hover{
+.category-title:hover{
     opacity: 0.7;
 }
-.sidebar .filter-container .category-title li{
+.category-title li{
     padding: 0 10px;
 }
-.sidebar .filter-container .category-title span{
+.category-title span{
     color: #222;
 }
+
+/** single post **/
 .posts-main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -308,7 +308,6 @@ header ul li a img{
 }
 .post-img{
     position: relative;
-    
 }
 .category-name{
     position: absolute;
@@ -319,25 +318,24 @@ header ul li a img{
     color: #fff;
     padding: 4px 10px;
     border-radius: 2px;
-}   
-.fun .category-name{
+}
+.business .category-name{
     background: #00a7ea;
 }
-.truck .category-name{
-    background: #FFC0CB;
+.culture .category-name{
+    background: #f03250;
 }
-.van .category-name{
+.politics .category-name{
     background: #f0544f;
 }
-.convertible .category-name{
+.finance .category-name{
     background: #2c2a4a;
 }
-.eco_friendly .category-name{
+.sports .category-name{
     background: #a1e44d;
 }
-.airplane .category-name{
-    background: #FFD700;
-}
+
+
 .post-content{
     padding: 25px;
 }
@@ -368,28 +366,16 @@ header ul li a img{
     padding: 8px 15px;
     display: block;
     margin: 5px auto;
-
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     cursor: pointer;
     border: 1px solid #292929;
     background: transparent;
     margin-bottom: 40px;
 }
+
 .read-btn:hover{
     background: #f6f6f6;
-}
-@media(max-width: 1170px){
-.posts-main-container{
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-@media(max-width: 768px){
-    .posts-main-container{
-    grid-template-columns: 1fr;
-}
-}
-.active{
-    background: #f0544f;
 }
 /*filter bar*/
 .wrapper{
