@@ -168,6 +168,7 @@ header ul li a img{
   display: flex;
 }
 .testimonial-container {
+ padding-top: 25%;
   width: 85%;
   height: 100%;
   position: relative;
