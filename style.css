@@ -153,7 +153,6 @@ header ul li a img{
 }   */
 /*slides*/   
 .slcontainer .slide-container{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -256,7 +255,6 @@ header ul li a img{
 }
 /*Inventory*/
 .posts-container{
-    padding-left: 30%; 
     line-height: 1.5;
     width: 90vw;
     margin: 0 auto;
@@ -397,6 +395,7 @@ header ul li a img{
 .wrapper{
   display: flex;
   position: relative;
+  padding-right: 50px;
 }
 .wrapper .sidebar{
   width: 200px;
