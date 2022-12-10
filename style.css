@@ -74,7 +74,7 @@ header ul li a img{
   font-weight:800;
   animation-delay: 1s;
 }
-.banner a {
+.homepage-banner a {
   display: inline-block;
   background: #fff;
   color: #36465d;
@@ -84,7 +84,7 @@ header ul li a img{
   font-size: 40px;
   transition: .3s;
 }
-.banner a:hover {
+.homepage-banner a:hover {
   background: #333;
   color: #fff;
   padding: 15px 20px;
