@@ -363,6 +363,7 @@ img{
 }
   /*Contact Us*/
 .concontainer{
+    background: lightskyblue;
     font-size: 14px;
     width: 80%;
     margin: 50px auto;
