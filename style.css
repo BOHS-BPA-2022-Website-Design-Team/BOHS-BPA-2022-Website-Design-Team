@@ -114,6 +114,7 @@ header ul li a img{
     display: block;
 }
 .inner_footer .logo_container img{
+    padding-right: 20%;
     width: 150px;
     height: auto;
 }
