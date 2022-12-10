@@ -4,9 +4,6 @@
     list-style: none;
     text-decoration: none;
 }
-img {
-    max-width: fit-content;
-}
 body{
     min-height: 100vh;
     display: flex;
@@ -152,7 +149,6 @@ header ul li a img{
 }   */
 /*slides*/   
 .slcontainer .slide-container{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
