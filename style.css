@@ -12,7 +12,10 @@ body{
     padding-bottom: 70px;
     background-color: #fff;
 }
-
+img{
+    max-width: 300px;
+    max-height: auto;
+}
 /* navbar */ 
 header{
     position: fixed;
@@ -373,7 +376,6 @@ header ul li a img{
     background: transparent;
     margin-bottom: 40px;
 }
-
 .read-btn:hover{
     background: #f6f6f6;
 }
