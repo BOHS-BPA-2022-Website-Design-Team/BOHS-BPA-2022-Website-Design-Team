@@ -152,7 +152,7 @@ header ul li a img{
 }
 }   */
 /*slides*/   
-.wrapper {
+.testimonials-wrapper {
   background-color: #ffffff;
   position: absolute;
   width: 80vw;
@@ -172,7 +172,7 @@ header ul li a img{
   margin: auto;
   padding: 1.8em 1.2em;
 }
-.wrapper button {
+.testimonials-wrapper button {
   font-size: 1.8em;
   height: 2.2em;
   width: 2.2em;
@@ -360,40 +360,40 @@ button#prev {
     background: #f0544f;
 }
 /*filter bar*/
-.wrapper{
+.filter-wrapper{
   display: flex;
   position: relative;
 }
-.wrapper .sidebar{
+.filter-wrapper .sidebar{
   width: 200px;
   height: 100%;
   background: #4b4276;
   padding: 30px 0px;
   position: fixed;
 }
-.wrapper .sidebar h2{
+.filter-wrapper .sidebar h2{
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
 }
-.wrapper .sidebar ul li{
+.filter-wrapper .sidebar ul li{
   padding: 15px;
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
 }    
-.wrapper .sidebar ul li a{
+.filter-wrapper .sidebar ul li a{
   color: #bdb8d7;
   display: block;
 }
-.wrapper .sidebar ul li a .fas{
+.filter-wrapper .sidebar ul li a .fas{
   width: 25px;
 }
-.wrapper .sidebar ul li:hover{
+.filter-wrapper .sidebar ul li:hover{
   background-color: #594f8d;
 }   
-.wrapper .sidebar ul li:hover a{
+.filter-wrapper .sidebar ul li:hover a{
   color: #fff;
 }
   /*Contact Us*/
