@@ -15,6 +15,12 @@
 		<li><a href="about_us.html"><img src="images/AboutUs.png" alt="About_Us"></a></li>
 		<li><a href="contact_us.html"><img src="images/ContactUs.png" alt="Contact_us"></a></li>
 	    </ul>
-  </header>
+	</header>
+	<script>
+	    window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0);
+	    })
+	</script>
 <body>
 </html>
