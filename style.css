@@ -37,7 +37,7 @@ header ul{
     align-items: center;
 }  
 header ul li {
-    position: relative;
+    position: relative;em
     list-style: none;
 }
 header ul li a{
@@ -204,7 +204,7 @@ button#prev {
   display: block;
   margin: 1.8em auto 1.25em auto;
   border-radius: 50%;
-  width: 4.4em;
+  width: 6em;
 }
 .testimonial-container h3 {
   color: #2d3d67;
