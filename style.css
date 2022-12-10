@@ -252,8 +252,9 @@ img{
     margin: 30px 0;
 }
 .sidebar .filter-container .category-head ul {
+    width: 100px;
     list-style-type: none;
-    margin-top: 150px;
+    margin-top: 50px;
     padding-right: 100px;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -321,12 +322,14 @@ img{
     padding: 25px;
 }
 .post-content-top{
+    max-width: 600px;
     background: #80ced7;
     color: #fff;
     opacity: 0.8;
     padding: 5px 0 5px 15px;
 }
 .post-content-top span{
+        max-width: 600px;
     padding-right: 20px;
 }
 .post-content-top .fa-comment, .post-content-top .fa-calendar{
