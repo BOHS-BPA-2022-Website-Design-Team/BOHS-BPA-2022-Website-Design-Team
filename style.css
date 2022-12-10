@@ -252,6 +252,7 @@ header ul li a img{
 }
 /*Inventory*/
 .posts-container{
+    box-sizing: border-box;
     padding-left: 30%; 
     line-height: 1.5;
     width: 90vw;
@@ -307,6 +308,7 @@ header ul li a img{
 }
 .post-img{
     position: relative;
+    
 }
 .category-name{
     position: absolute;
@@ -480,7 +482,7 @@ button{
     background: #1c00b5;
     width: 100px;
     border: none;
-    color: #fff;
+    color: #666;
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
