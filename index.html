@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+        <title>BP Auto sales</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/a5cab20f4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+	    <a href="#" class="logo"><img href="images/LogoNoCircle.png"></a>
+	    <ul>
+		<li><a href="index.html"><img src="images/home.png" alt="Home"></a></li>
+		<li><a href="inventory.html"><img src="images/inventory.png" alt="Inventory"></a></li>
+		<li><a href="about_us.html"><img src="images/AboutUs.png" alt="About_Us"></a></li>
+		<li><a href="contact_us.html"><img src="images/ContactUs.png" alt="Contact_us"></a></li>
+	    </ul>
+	</header>
+	<section class = "banner"></section>
+	<script type="text/javascript">
+	    window.addEventListener("scroll", function(){
+		var header = document.querySelector("header");
+		header.classList.toggle("sticky", window.scrollY > 0);
+	    })
+	</script>
+<!-- Reviews section -->
+<div class= "slcontainer>
+	<div class=" "slide-container">
+		<div class="slide">
+			<i class="fa-solid fa-arrow-right"></i>
+			<div class="user">
+				<img src="images/2616451236_56e5a21b0f_b.jpg" alt">
+				<div class="user-info">
+					<h3>John Williker</h3>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<p class="text">BPA Auto Sales was there for me when my old car broke down. They hooked my up with a sweet new ride fast and at a reasonable price!"</p> 
+		</div>
+		<div class="slide">
+			<i class="fa-sharp fa-solid fa-quote-right"></i>
+			<div class="user">
+				<img src="images/PIXNIO-2568248-3840x5760.jpg" alt">
+				<div class="user-info">
+					<h3>Joey Droop</h3>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<p class="text">"As a busy business man and father of 4, I don't have a lot of time. BPA helped me purchase a new car extremely quickly. I am very impressed with their customer service."</p> 
+		</div>
+		<div class="slide">
+			<i class="fa-sharp fa-solid fa-quote-right"></i>
+			<div class="user">
+				<img src="images/Testimonial_1.jpg" alt">
+				<div class="user-info">
+					<h3>Malanie Milintoff</h3>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<p class="text">"It's hard to find affordable care these days. I am fortunate to have found BPA auto and find a car that work with my budget!"</p> 
+		</div>
+		<div class="slide">
+			<i class="fa-sharp fa-solid fa-quote-right"></i>
+			<div class="user">
+				<img src="images/winniethepooh_egmont.jpg" alt">
+				<div class="user-info">
+					<h3>Winnie The Pooh</h3>
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<p class="text">"Hmm, well I must say I enjoy the hunny car I purchased. Talking about hunny, I could really go for a smackeral right about now..."</p> 
+		</next>
+		<div id= "next" class="fa-solid fa-arrow-right" onclick="next()"</div>
+		<div id= "next" class="fa-solid fa-arrow-left" onclick="prev()"</div>
+	</div>
+	<script>
+	let slides = document.querySelectorAll('.slide-container');
+	let index = 0;
+		
+	function next(){
+		slides[index].classList.remove('active');
+		index = (index + 1) % slides.length;
+		slides[index].classList.add('active');
+	}
+	function prev(){
+		slides[index].classList.remove('active');
+		index = (index - 1 + slides.length) % slides.length;
+		slides[index].classList.add('active');
+	}
+	</script>
+<div>
+<div class= "footer">
+	<div class= "inner_footer">
+		<div class = "logo_container">
+			<img src="images/LogoNoCircle.png">
+		</div>
+		<div class = "footer_third">
+			<h1>Navigation<h1>
+			<a href="index.html">Home</a>
+			<a href="inventory.html">Inventory</a>
+			<a href="about_us.html">about_Us</a>
+			<a href="contact_us.html">Contact_us</a>
+		</div>
+		<div class = "footer_third">
+			<h1>Contact Us<h1>
+			<i class="fa-solid fa-phone"></i><h1>208-360-3258<h1>
+			<i class="fa-solid fa-envelopes-bulk"></i><h1>3497 N Ammon Rd, Idaho Falls, ID 83401<h1>
+			<i class="fa-regular fa-envelope-open"></i><h1>BPAutosales@imaginary.com<h1>	
+		</div>
+		<div class = "footer_third">
+			<h1>Follow us<h1>
+		  	<li><a href="#"><i class="fa-brands fa-facebook"></i><a></li>
+			<li><a href="#"><i class="fa-brands fa-twitter"></i><a></li>
+			<li><a href="#"><i class="fa-brands fa-instagram"></i><a></li>
+			<li><a href="#"><i class="fa-brands fa-tiktok"></i><a></li>
+			<span>
+				Code scripting by Jacob Briggs<br>
+				Project writing and research by Levi Edwards<br>
+				Original logos and site map by Alexander Owens<br>
+				Project image research and writing support Carter Barnes<br>				
+				
+				<br>Image credit:<br>
+				https://docs.google.com<br>
+				/document/d/1RvPRMspUxacQC5Z8J64<br>
+				C0R0PgbcQ67MNfwmA1TtCH7A/edit?usp=sharing
+			</span>
+	       </div>					      
+	</div>
+</div>
+</body>
+</html>
