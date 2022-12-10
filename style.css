@@ -258,6 +258,7 @@ header ul li a img{
     line-height: 1.5;
     width: 90vw;
     margin: 0 auto;
+    padding-left: 100px;
 }
 .posts-container > h2{
     text-align: center;
@@ -395,7 +396,6 @@ header ul li a img{
 .wrapper{
   display: flex;
   position: relative;
-  padding-right: 50px;
 }
 .wrapper .sidebar{
   width: 200px;
