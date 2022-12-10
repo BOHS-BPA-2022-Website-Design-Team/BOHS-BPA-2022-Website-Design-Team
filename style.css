@@ -141,16 +141,6 @@ header ul li a img{
     width: 100%;
     padding-top: 20px;
 }
-/* @media(max-width: 600px){
-    footer .inner_footer{
-        width: 90%;
-    }
-    .inner_footer .logo_container,
-    .inner_footer .footer_third{
-        width: 100%;
-        margin-bottom: 30px;
-}
-}   */
 /*slides*/   
 .testimonials-wrapper {
   background-color: #ffffff;
@@ -269,7 +259,7 @@ button#prev {
 }
 .posts-main-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0fr);
     grid-gap: 40px;
 }
 .posts-main-container > div{
@@ -345,16 +335,6 @@ button#prev {
 }
 .read-btn:hover{
     background: #f6f6f6;
-}
-@media(max-width: 1170px){
-.posts-main-container{
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-@media(max-width: 768px){
-    .posts-main-container{
-    grid-template-columns: 1fr;
-}
 }
 .active{
     background: #f0544f;
