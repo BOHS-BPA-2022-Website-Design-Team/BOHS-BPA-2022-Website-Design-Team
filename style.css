@@ -153,6 +153,7 @@ header ul li a img{
 }   */
 /*slides*/   
 .slcontainer .slide-container{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -255,9 +256,10 @@ header ul li a img{
 }
 /*Inventory*/
 .posts-container{
+    padding-left: 30%; 
+    line-height: 1.5;
     width: 90vw;
     margin: 0 auto;
-    padding: 40px 0;
 }
 .posts-container > h2{
     text-align: center;
@@ -270,16 +272,16 @@ header ul li a img{
     opacity: 0.7;
     text-align: center;
 }
-.category-head{
+.sidebar .filter-container .category-head{
     margin: 30px 0;
 }
-.category-head ul{
+.sidebar .filter-container .category-head ul{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.category-title{
+.sidebar .filter-container .category-title{
     flex: 0 0 calc(16.6667% - 10px);
     display: flex;
     justify-content:center;
@@ -290,17 +292,15 @@ header ul li a img{
     cursor: pointer;
     transition: all 0.4s ease;
 }
-.category-title:hover{
+.sidebar .filter-container .category-title:hover{
     opacity: 0.7;
 }
-.category-title li{
+.sidebar .filter-container .category-title li{
     padding: 0 10px;
 }
-.category-title span{
+.sidebar .filter-container .category-title span{
     color: #222;
 }
-
-/** single post **/
 .posts-main-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -321,24 +321,25 @@ header ul li a img{
     color: #fff;
     padding: 4px 10px;
     border-radius: 2px;
-}
-.business .category-name{
+}   
+.fun .category-name{
     background: #00a7ea;
 }
-.culture .category-name{
-    background: #f03250;
+.truck .category-name{
+    background: #FFC0CB;
 }
-.politics .category-name{
+.van .category-name{
     background: #f0544f;
 }
-.finance .category-name{
+.convertible .category-name{
     background: #2c2a4a;
 }
-.sports .category-name{
+.eco_friendly .category-name{
     background: #a1e44d;
 }
-
-
+.airplane .category-name{
+    background: #FFD700;
+}
 .post-content{
     padding: 25px;
 }
@@ -369,7 +370,7 @@ header ul li a img{
     padding: 8px 15px;
     display: block;
     margin: 5px auto;
-    font-family: 'Poppins', sans-serif;
+
     font-size: 15px;
     cursor: pointer;
     border: 1px solid #292929;
@@ -378,6 +379,19 @@ header ul li a img{
 }
 .read-btn:hover{
     background: #f6f6f6;
+}
+@media(max-width: 1170px){
+.posts-main-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+@media(max-width: 768px){
+    .posts-main-container{
+    grid-template-columns: 1fr;
+}
+}
+.active{
+    background: #f0544f;
 }
 /*filter bar*/
 .wrapper{
@@ -470,7 +484,7 @@ button{
     background: #1c00b5;
     width: 100px;
     border: none;
-    color: #666;
+    color: #fff;
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
