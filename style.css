@@ -154,7 +154,7 @@ header ul li a img{
     padding-top: 20px;
 }
 /*slides*/   
-.testimonials-wrapper {
+.testimonial-wrapper {
     background-color: #ffffff;
     position: relative;
     width: 80vw;
@@ -166,7 +166,6 @@ header ul li a img{
     top: 50%;
     box-shadow: 0 1.8em 3em rgb(1 17 39 / 15%);
     display: flex;
-    
     margin-top: 200px;
 }
 .testimonial-container {
