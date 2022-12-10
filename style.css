@@ -230,10 +230,6 @@ img{
     max-width: 300px;
     max-height: auto;
 }
-.inventory-header.sticky{
-    padding: 5px 100px;
-    background: #fff;
-}
 .posts-container{
     line-height: 1.5;
     width: 90vw;
