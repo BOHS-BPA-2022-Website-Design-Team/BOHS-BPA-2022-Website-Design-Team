@@ -17,168 +17,70 @@
 	    </ul>
 	</header>
 	<section class = "banner"></section>
-	<script type="text/javascript">
+	<script>
 	    window.addEventListener("scroll", function(){
 		var header = document.querySelector("header");
 		header.classList.toggle("sticky", window.scrollY > 0);
 	    })
 	</script>
-	
-
-	
-	
-	<div class="testimonials wrapper">
-      <div class="testimonial-container" id="testimonial-container"></div>
-      <button id="prev">&lt;</button>
-      <button id="next">&gt;</button>
-    </div>
-    <!-- Script -->
-    <script>
-	const testimonials = [{
-	    name: "John Williker",
-	    image: "images/2616451236_56e5a21b0f_b.jpg",
-	    testimonial:
-	      "BPA Auto Sales was there for me when my old car broke down. They hooked my up with a sweet new ride fast and at a reasonable price!",
-	  },
-	  {
-	    name: "Joey Droop",
-	    image: "images/PIXNIO-2568248-3840x5760 (1).jpg",
-	    testimonial:
-	      "As a busy business man and father of 4, I don't have a lot of time. BPA helped me purchase a new car extremely quickly. I am very impressed with their customer service.",
-	  },
-	  {
-	    name: "Malanie Milintoff",
-	    image: "images/Testimonial_1.jpg",
-	    testimonial:
-	      "It's hard to find affordable cars these days. I am fortunate to have found BPA auto and find a car that work with my budget!",
-	  },
-	  {
-	    name: "Annonomous",
-	    image: "images/winniethepooh_egmont.jpg",
-	    testimonial:
-	      "Hmm, well I must say I enjoy the hunny car I purchased. Talking about hunny, I could really go for a smackeral right about now...",
-	  },
-	];
-	//Current Slide
-	let i = 0;
-	//Total Slides
-	let j = testimonials.length;
-	let testimonialContainer = document.getElementById("testimonial-container");
-	let nextBtn = document.getElementById("next");
-	let prevBtn = document.getElementById("prev");
-	nextBtn.addEventListener("click", () => {
-	  i = (j + i + 1) % j;
-	  displayTestimonial();
-	});
-	prevBtn.addEventListener("click", () => {
-	  i = (j + i - 1) % j;
-	  displayTestimonial();
-	});
-	let displayTestimonial = () => {
-	  testimonialContainer.innerHTML = `
-	    <p>${testimonials[i].testimonial}</p>
-	    <img src=${testimonials[i].image}>
-	    <h3>${testimonials[i].name}</h3>
-	    <h6>${testimonials[i].job}</h6>
-	  `;
-	};
-	window.onload = displayTestimonial;
-	</script>
-	
-	
-	
-	
-
-<!-- Reviews section -->
-<div class= "slcontainer>
-	<div class=" "slide-container">
-		<div class="slide">
-			<i class="fa-solid fa-arrow-right"></i>
-			<div class="user">
-				<img src="images/2616451236_56e5a21b0f_b.jpg" alt">
-				<div class="user-info">
-					<h3>John Williker</h3>
-					<div class="stars">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-regular fa-star"></i>
-					</div>
-				</div>
-			</div>
-			<p class="text">BPA Auto Sales was there for me when my old car broke down. They hooked my up with a sweet new ride fast and at a reasonable price!"</p> 
-		</div>
-		<div class="slide">
-			<i class="fa-sharp fa-solid fa-quote-right"></i>
-			<div class="user">
-				<img src="images/PIXNIO-2568248-3840x5760 (1).jpg" alt"Stupid man">
-				<div class="user-info">
-					<h3>Joey Droop</h3>
-					<div class="stars">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-					</div>
-				</div>
-			</div>
-			<p class="text">"As a busy business man and father of 4, I don't have a lot of time. BPA helped me purchase a new car extremely quickly. I am very impressed with their customer service."</p> 
-		</div>
-		<div class="slide">
-			<i class="fa-sharp fa-solid fa-quote-right"></i>
-			<div class="user">
-				<img src="images/Testimonial_1.jpg" alt">
-				<div class="user-info">
-					<h3>Malanie Milintoff</h3>
-					<div class="stars">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-regular fa-star"></i>
-					</div>
-				</div>
-			</div>
-			<p class="text">"It's hard to find affordable cars these days. I am fortunate to have found BPA auto and find a car that work with my budget!"</p> 
-		</div>
-		<div class="slide">
-			<i class="fa-sharp fa-solid fa-quote-right"></i>
-			<div class="user">
-				<img src="images/winniethepooh_egmont.jpg" alt">
-				<div class="user-info">
-					<h3>Winnie The Pooh</h3>
-					<div class="stars">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-					</div>
-				</div>
-			</div>
-			<p class="text">"Hmm, well I must say I enjoy the hunny car I purchased. Talking about hunny, I could really go for a smackeral right about now..."</p> 
-		</next>
-		<div id= "next" class="fa-solid fa-arrow-right" onclick="next()"</div>
-		<div id= "next" class="fa-solid fa-arrow-left" onclick="prev()"</div>
+<div class="testimonials wrapper">
+        <div class="testimonial-container" id="testimonial-container"></div>
+	      <button id="prev">&lt;</button>
+	      <button id="next">&gt;</button>
 	</div>
 	<script>
-	let slides = document.querySelectorAll('.slide-container');
-	let index = 0;
-		
-	function next(){
-		slides[index].classList.remove('active');
-		index = (index + 1) % slides.length;
-		slides[index].classList.add('active');
-	}
-	function prev(){
-		slides[index].classList.remove('active');
-		index = (index - 1 + slides.length) % slides.length;
-		slides[index].classList.add('active');
-	}
+		const testimonials = [{
+		    name: "John Williker",
+		    image: "images/2616451236_56e5a21b0f_b.jpg",
+		    testimonial:
+		      "BPA Auto Sales was there for me when my old car broke down. They hooked my up with a sweet new ride fast and at a reasonable price!",
+		  },
+		  {
+		    name: "Joey Droop",
+		    image: "images/PIXNIO-2568248-3840x5760 (1).jpg",
+		    testimonial:
+		      "As a busy business man and father of 4, I don't have a lot of time. BPA helped me purchase a new car extremely quickly. I am very impressed with their customer service.",
+		  },
+		  {
+		    name: "Malanie Milintoff",
+		    image: "images/Testimonial_1.jpg",
+		    testimonial:
+		      "It's hard to find affordable cars these days. I am fortunate to have found BPA auto and find a car that work with my budget!",
+		  },
+		  {
+		    name: "Annonomous",
+		    image: "images/winniethepooh_egmont.jpg",
+		    testimonial:
+		      "Hmm, well I must say I enjoy the hunny car I purchased. Talking about hunny, I could really go for a smackeral right about now...",
+		  },
+		];
+		//Current Slide
+		let i = 0;
+		//Total Slides
+		let j = testimonials.length;
+		let testimonialContainer = document.getElementById("testimonial-container");
+		let nextBtn = document.getElementById("next");
+		let prevBtn = document.getElementById("prev");
+		nextBtn.addEventListener("click", () => {
+		  i = (j + i + 1) % j;
+		  displayTestimonial();
+		});
+		prevBtn.addEventListener("click", () => {
+		  i = (j + i - 1) % j;
+		  displayTestimonial();
+		});
+		let displayTestimonial = () => {
+		  testimonialContainer.innerHTML = `
+		    <p>${testimonials[i].testimonial}</p>
+		    <img src=${testimonials[i].image}>
+		    <h3>${testimonials[i].name}</h3>
+		    <h6>${testimonials[i].job}</h6>
+		  `;
+		};
+		window.onload = displayTestimonial;
 	</script>
-<div>
+</div>
+	
 <div class= "footer">
 	<div class= "inner_footer">
 		<div class = "logo_container">
