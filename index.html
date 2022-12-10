@@ -32,7 +32,7 @@
 	<script>
 		const testimonials = [{
 		    image: "images/2616451236_56e5a21b0f_b.jpg",
-			name: "John Williker",
+		    name: "John Williker",
 		    testimonial:
 		      "BPA Auto Sales was there for me when my old car broke down. They hooked my up with a sweet new ride fast and at a reasonable price!",
 		  },
@@ -73,8 +73,8 @@
 		});
 		let displayTestimonial = () => {
 		  testimonialContainer.innerHTML = `
-		    <p>${testimonials[i].testimonial}</p>
 		    <img src=${testimonials[i].image}>
+		    <p>${testimonials[i].testimonial}</p>
 		    <h3>${testimonials[i].name}</h3>
 		  `;
 		};
