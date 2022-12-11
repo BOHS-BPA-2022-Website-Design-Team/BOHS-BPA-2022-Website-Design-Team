@@ -470,9 +470,11 @@ tr rd{
 }
 /*about Us*/
 .team-info{
+    display: flex;
     background-color: lightsteelblue;
     height: 500px;
     width: 100%;
+    align-items: center;
 }
 .team-container{
     display: grid;
