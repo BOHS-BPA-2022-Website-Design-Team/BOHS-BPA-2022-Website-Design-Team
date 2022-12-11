@@ -44,8 +44,7 @@ header ul li a{
     transition: 0.6s;
 }
 header ul li a img{
-    height: 2em;
-    width: auto;
+    height: 4em;
 }  
   header.sticky .logo,
   header.sticky ul li a{
