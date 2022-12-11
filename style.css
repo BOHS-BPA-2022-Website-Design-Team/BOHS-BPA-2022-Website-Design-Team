@@ -23,11 +23,6 @@ header.sticky{
 }
 header.logo{
     position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     transition:  0.6s;
 }
 header ul{
