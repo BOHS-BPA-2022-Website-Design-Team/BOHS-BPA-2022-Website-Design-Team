@@ -473,3 +473,7 @@ tr rd{
     grid-template-columns: repeat(4, 0fr);
     grid-gap: 60px;
 }
+.person{
+    border: 3px solid;
+    border-color: lightsteelblue;
+}
