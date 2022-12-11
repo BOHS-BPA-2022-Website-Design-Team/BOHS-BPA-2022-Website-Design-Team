@@ -491,6 +491,7 @@ tr rd{
 }
 .team-container{
     display: grid;
+    justify-content: center;
     padding: 50px;
     grid-template-columns: repeat(2, 0fr);
     grid-gap: 100px;
