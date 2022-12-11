@@ -467,6 +467,11 @@ tr rd{
    padding-top: 20px;   
 }
 /*about Us*/
+.team-info{
+    background-color: lightsteelblue;
+    height: 500px;
+    width: 100%;
+}
 .team-container{
     display: grid;
     padding: 50px;
