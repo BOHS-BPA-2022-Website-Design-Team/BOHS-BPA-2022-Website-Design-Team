@@ -469,6 +469,7 @@ tr rd{
 /*about Us*/
 .team-container{
     display: grid;
+    padding: 50px;
     grid-template-columns: repeat(4, 0fr);
-    grid-gap: 20px;
+    grid-gap: 60px;
 }
