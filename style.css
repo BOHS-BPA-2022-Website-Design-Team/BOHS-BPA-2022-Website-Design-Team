@@ -467,3 +467,25 @@ tr rd{
    padding-top: 20px;   
 }
 /*about Us*/
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-gap: 40px;
+}
+.person{
+    line-height: 1.5;
+    width: 90vw;
+    margin: 0 auto;
+    padding-left: 250px;
+}
+.person > h2{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+}
+.person > p{
+    font-weight: 300;
+    padding: 10px 0;
+    opacity: 0.7;
+    text-align: center;
+}
