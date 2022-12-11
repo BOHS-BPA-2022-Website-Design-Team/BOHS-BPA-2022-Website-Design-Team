@@ -98,6 +98,9 @@ header ul li a img{
 	list-style: none;
 }
 .footer{
+    margin:0;
+	padding:0;
+	box-sizing: border-box;
 	background-color: #24262b;
     padding: 70px 0;
 }
