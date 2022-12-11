@@ -17,7 +17,7 @@ header{
     z-index: 100000;
     transition: 0.6s;
 }
-header img{
+header a img{
     max-height: 4em;
     width: auto;
 }
