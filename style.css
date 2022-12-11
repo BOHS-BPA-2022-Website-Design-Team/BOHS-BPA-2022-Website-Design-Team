@@ -109,6 +109,9 @@ header ul li a img{
    width: 20%;
    padding: 0 15px;
 }
+.footer-col img{
+	max-width: 200px;
+}
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
