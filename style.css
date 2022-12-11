@@ -17,6 +17,10 @@ header{
     z-index: 100000;
     transition: 0.6s;
 }
+header img{
+    max-height: 4em;
+    width: auto;
+}
 header.sticky{
     padding: 5px 100px;
     background: #fff;
