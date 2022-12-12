@@ -13,12 +13,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
-    z-index: 100000;
+    padding: 40px 70px;
     transition: 0.6s;
 }
 header a img{
-    max-height: 4em;
+    max-height: 6em;
     width: auto;
 }
 header.sticky{
@@ -47,7 +46,7 @@ header ul li a{
     transition: 0.6s;
 }
 header ul li a img{
-    height: 4em;
+    height: 6em;
 }  
   header.sticky .logo,
   header.sticky ul li a{
