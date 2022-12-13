@@ -13,7 +13,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 70px;
+    padding: 40px 100px;
+    z-index: 100000;
     transition: 0.6s;
 }
 header a img{
@@ -46,7 +47,7 @@ header ul li a{
     transition: 0.6s;
 }
 header ul li a img{
-    height: 6em;
+    height: 4em;
 }  
   header.sticky .logo,
   header.sticky ul li a{
@@ -246,7 +247,7 @@ img{
 .posts-container > h2{
     text-align: center;
     padding: 10px 0;
-    font-size: 50px;
+    font-size: 32px;
 }
 .posts-container > p{
     font-weight: 300;
@@ -375,7 +376,7 @@ img{
 .filter-wrapper .sidebar{
   width: 200px;
   height: 100%;
-  background: #666;
+  background: #4b4276;
   padding: 30px 0px;
   position: fixed;
 }
