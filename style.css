@@ -500,10 +500,3 @@ tr rd{
     border: 3px solid;
     border-color: lightsteelblue;
 }
-.team-info{
-    justify-content: center;
-    align-items: center;
-}
-.team-info h1{
-    color: #fff
-}
