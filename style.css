@@ -21,7 +21,7 @@ header a img{
     width: auto;
 }
 header.sticky{
-    padding: 5px 70px;
+    padding: 5px 100px;
     background: #fff;
 }
 header.logo{
@@ -46,7 +46,7 @@ header ul li a{
     transition: 0.6s;
 }
 header ul li a img{
-    height: 4em;
+    height: 6em;
 }  
   header.sticky .logo,
   header.sticky ul li a{
