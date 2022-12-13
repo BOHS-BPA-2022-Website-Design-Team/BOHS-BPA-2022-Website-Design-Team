@@ -254,7 +254,7 @@ img{
     opacity: 0.7;
     text-align: center;
 }
-/* .sidebar .filter-container .category-head{
+.sidebar .filter-container .category-head{
     margin: 30px 0;
 }
 .sidebar .filter-container .category-head ul {
@@ -284,7 +284,7 @@ img{
 }
 .sidebar .filter-container .category-title span{
     color: #222;
-} */
+}
 .posts-main-container{
     display: grid;
     grid-template-columns: repeat(3, 0fr);
@@ -367,7 +367,7 @@ img{
   text-align: center;
   margin-bottom: 30px;
 }
-/* .filter-wrapper .sidebar ul li{
+.filter-wrapper .sidebar ul li{
   padding: 15px;
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -382,7 +382,7 @@ img{
 }
 .filter-wrapper .sidebar ul li:hover{
   background-color: #594f8d;
-}    */
+}   
 .filter-wrapper .sidebar ul li:hover a{
   color: #fff;
 }
