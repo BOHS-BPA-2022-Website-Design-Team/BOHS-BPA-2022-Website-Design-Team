@@ -309,7 +309,25 @@ button#prev {
     color: #fff;
     padding: 4px 10px;
     border-radius: 2px;
-}   
+}
+.fun .category-name{
+    background: #00a7ea;
+}
+.truck .category-name{
+    background: #FFC0CB;
+}
+.van .category-name{
+    background: #f0544f;
+}
+.convertible .category-name{
+    background: #2c2a4a;
+}
+.eco_friendly .category-name{
+    background: #a1e44d;
+}
+.flying .category-name{
+    background: #FFD700;
+}
 .post-content{
     padding: 25px;
 }
