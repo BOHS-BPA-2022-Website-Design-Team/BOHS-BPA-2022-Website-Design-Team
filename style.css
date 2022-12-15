@@ -127,7 +127,7 @@ header ul li a img{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: lightsteelblue;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -138,10 +138,10 @@ header ul li a img{
 .footer-col ul li a{
 	font-size: 16px;
 	text-transform: capitalize;
-	color: #ffffff;
+	color: #666;
 	text-decoration: none;
 	font-weight: 300;
-	color: #bbbbbb;
+	color: #fff;
 	display: block;
 	transition: all 0.3s ease;
 }
