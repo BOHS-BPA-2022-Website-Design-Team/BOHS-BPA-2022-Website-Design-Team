@@ -492,12 +492,19 @@ tr rd{
     width: 100%;
     align-items: center;
 }
+.team-info h1{
+    color: #fff;
+}
 .team-container{
     display: grid;
     justify-content: center;
     padding: 50px;
     grid-template-columns: repeat(2, 0fr);
     grid-gap: 100px;
+}
+.team-container img{
+    width: 400px;
+    height: auto;
 }
 .person{
     border: 3px solid;
