@@ -237,6 +237,7 @@ button#prev {
 /*Inventory*/
 img{
     max-width: 300px;
+    height: 300px;
 }
 .posts-container{
     line-height: 1.5;
