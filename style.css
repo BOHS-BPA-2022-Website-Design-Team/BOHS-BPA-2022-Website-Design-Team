@@ -491,6 +491,7 @@ tr rd{
     height: 500px;
     width: 100%;
     align-items: center;
+    justify-content: center;
 }
 .team-info h1{
     color: #fff;
