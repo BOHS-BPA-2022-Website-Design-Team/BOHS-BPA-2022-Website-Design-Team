@@ -288,6 +288,7 @@ img{
 }
 .posts-main-container{
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 0fr);
     grid-gap: 40px;
 }
