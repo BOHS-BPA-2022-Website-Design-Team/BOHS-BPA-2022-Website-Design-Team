@@ -4,7 +4,7 @@ font-family: 'Gill Sans', sans-serif;
 }
 
 /* navbar */ 
-header{
+nav {
     position: fixed;
     box-sizing: border-box;
     top: 0;
@@ -17,28 +17,28 @@ header{
     z-index: 100000;
     transition: 0.6s;
 }
-header a img{
+nav a img{
     max-height: 4em;
     width: auto;
 }
-header.sticky{
+nav.sticky{
     padding: 5px 85px;
     background: #fff;
 }
-header.logo{
+nav.logo{
     position: relative;
 }
-header ul{
+nav ul{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }  
-header ul li {
+nav ul li {
     position: relative;
     list-style: none;
 }
-header ul li a{
+nav ul li a{
     position: relative;
     margin: 0 15px;
     text-decoration: none;
@@ -46,11 +46,11 @@ header ul li a{
     padding-right: 2px;
     transition: 0.6s;
 }
-header ul li a img{
+nav ul li a img{
     height: 4em;
 }  
-  header.sticky .logo,
-  header.sticky ul li a{
+  nav.sticky .logo,
+  nav.sticky ul li a{
     color: #000;
 }  
 /* banners */ 
