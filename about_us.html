@@ -17,6 +17,7 @@
     </ul>
 </nav>
 <body>
+<main>
 	<section class = "team-banner"></section>
 	<hr>
 	<div class="team-info">
@@ -86,14 +87,15 @@
 		</h1>
 	</div>
 	<hr>
-	
-	<script>
+<script>
+<! -- Nav Animation -->
 	    window.addEventListener("scroll", function(){
-		var header = document.querySelector("header");
-		header.classList.toggle("sticky", window.scrollY > 0);
+		var nav = document.querySelector("nav");
+		nav.classList.toggle("sticky", window.scrollY > 0);
 	    })
-	</script>
-	
+</script>
+</main>
+</body>
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -128,5 +130,4 @@
 			</div>
 		</div>
 	</footer>
-<body>
 </html>
