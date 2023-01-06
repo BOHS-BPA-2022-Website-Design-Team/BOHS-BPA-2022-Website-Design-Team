@@ -416,8 +416,13 @@
                 </div>
             </div>
         </div>
-        <!-- JS file -->
-        <script>
+<script>
+<! -- Nav Animation -->
+	    window.addEventListener("scroll", function(){
+		var nav = document.querySelector("nav");
+		nav.classList.toggle("sticky", window.scrollY > 0);
+	    })
+ <!-- filter -->
             const categoryTitle = document.querySelectorAll('.category-title');
             const allCategoryPosts = document.querySelectorAll('.all');
  
@@ -442,8 +447,7 @@
                 }
                 activeItem.classList.add('active');
             };
-        </script>
-<hr>
+</script>
 </main>
 </body>
 <footer>
