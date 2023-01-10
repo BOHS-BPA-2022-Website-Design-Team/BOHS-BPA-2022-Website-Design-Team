@@ -1,3 +1,4 @@
+// reviews
 const testimonials = [{
     image: "images/2616451236_56e5a21b0f_b.jpg",
     name: "John Williker",

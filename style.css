@@ -261,10 +261,10 @@ button#prev {
     opacity: 0.7;
     text-align: center;
 }
-.sidebar .filter-container .category-head{
+aside .filter-container .category-head{
     margin: 30px 0;
 }
-.sidebar .filter-container .category-head ul {
+aside .filter-container .category-head ul {
     width: 100px;
     list-style-type: none;
     margin-top: 50px;
@@ -272,7 +272,7 @@ button#prev {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-.sidebar .filter-container .category-title{
+aside .filter-container .category-title{
     flex: 0 0 calc(16.6667% - 10px);
     display: flex;
     width: 100px;
@@ -284,13 +284,13 @@ button#prev {
     cursor: pointer;
     transition: all 0.4s ease;
 }
-.sidebar .filter-container .category-title:hover{
+aside .filter-container .category-title:hover{
     opacity: 0.7;
 }
-.sidebar .filter-container .category-title li{
+aside .filter-container .category-title li{
     padding: 0 10px;
 }
-.sidebar .filter-container .category-title span{
+aside .filter-container .category-title span{
     color: #222;
 }
 .posts-main-container{
@@ -381,35 +381,35 @@ button#prev {
   display: flex;
   position: relative;
 }
-.filter-wrapper .sidebar{
+.filter-wrapper aside{
   width: 230px;
   background: #002F6C;
   padding: 30px 0px;
   position: relative;
 }
-.filter-wrapper .sidebar h2{
+.filter-wrapper aside h2{
   color: #fff;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 30px;
 }
-.filter-wrapper .sidebar ul li{
+.filter-wrapper aside ul li{
   padding: 15px;
   border-bottom: 1px solid #bdb8d7;
   border-bottom: 1px solid rgba(0,0,0,0.05);
   border-top: 1px solid rgba(255,255,255,0.05);
 }    
-.filter-wrapper .sidebar ul li a{
+.filter-wrapper aside ul li a{
   color: #bdb8d7;
   display: block;
 }
-.filter-wrapper .sidebar ul li a .fas{
+.filter-wrapper aside ul li a .fas{
   width: 25px;
 }
-.filter-wrapper .sidebar ul li:hover{
+.filter-wrapper aside ul li:hover{
   background-color: #594f8d;
 }   
-.filter-wrapper .sidebar ul li:hover a{
+.filter-wrapper aside ul li:hover a{
   color: #fff;
 }
   /*Contact Us*/

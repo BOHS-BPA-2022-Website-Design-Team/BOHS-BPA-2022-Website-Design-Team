@@ -7,6 +7,8 @@
 	<link href="https://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/a5cab20f4d.js" crossorigin="anonymous"></script>
+</head>
+<header>
 <nav>
     <a><img src="images/LogoNoCircle.png"></a>
     <ul>
@@ -16,10 +18,11 @@
 		<li><a href="contact_us.html"><img src="images/ContactUsLegit.png" alt="Contact_us"></a></li>
     </ul>
 </nav>
+</header>
 <body>
 <main>
  <div class="filter-wrapper">
-    <div class="sidebar">
+    <aside">
         <div class = "filter-container">
             <div class = "category-head">
                 <ul>
@@ -57,7 +60,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    <aside>
         <div class = "posts-container">
 	    <br>
 	    <br>
@@ -416,72 +419,42 @@
                 </div>
             </div>
         </div>
-<script>
-<! -- Nav Animation -->
-	    window.addEventListener("scroll", function(){
-		var nav = document.querySelector("nav");
-		nav.classList.toggle("sticky", window.scrollY > 0);
-	    })
- <!-- filter -->
-            const categoryTitle = document.querySelectorAll('.category-title');
-            const allCategoryPosts = document.querySelectorAll('.all');
- 
-            for(let i = 0; i < categoryTitle.length; i++){
-                categoryTitle[i].addEventListener('click', filterPosts.bind(this, categoryTitle[i]));
-            }
- 
-            function filterPosts(item){
-                changeActivePosition(item);
-                for(let i = 0; i < allCategoryPosts.length; i++){
-                    if(allCategoryPosts[i].classList.contains(item.attributes.id.value)){
-                        allCategoryPosts[i].style.display = "block";
-                    } else {
-                        allCategoryPosts[i].style.display = "none";
-                    }
-                }
-            }
- 
-            function changeActivePosition(activeItem){
-                for(let i = 0; i < categoryTitle.length; i++){
-                    categoryTitle[i].classList.remove('active');
-                }
-                activeItem.classList.add('active');
-            };
-</script>
-</main>
+<script src = "scripts/nav.js"></script>
+<script src = "scripts/filter.js"></script>
+<main>
 </body>
 <footer>
-	<div class="container">
-		<div class="row">
-			<div class="footer-col">
-				<img src="images/LogoNoCircle.png">
-			</div>
-			<div class="footer-col">
-				<h4>Navigation</h4>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="inventory.html">Inventory</a></li>
-					<li><a href="about_us.html">About Us</a></li>
-					<li><a href="contact_us.html">Contact us</a></li>
-				</ul>
-			</div>
-			<div class="footer-col">
-				<h4>Contact Us<h4>
-                <li><a>208-360-3258</a></li>
-                <li><a>3497 N Ammon Rd,</a></li>
-                <li><a>Idaho Falls, ID 83401</a></li>
-                <li><a>BPAutosales@Imaginary.com</a></li>
-			</div>
-			<div class="footer-col">
-				<h4>follow us</h4>
-				<div class="social-links">
-					<li><a href="https://www.facebook.com/BPAIdaho/"><i class="fa-brands fa-facebook"></i></a></li>
-					<li><a href="https://twitter.com/idahobpa"><i class="fa-brands fa-twitter"></i></a></li>
-					<li><a href="https://www.instagram.com/idahobpa/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
-					<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i class="fa-brands fa-tiktok"></i></a></li>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <img src="images/LogoNoCircle.png">
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us<h4>
+                    <li><a>208-360-3258</a></li>
+                    <li><a>3497 N Ammon Rd,</a></li>
+                    <li><a>Idaho Falls, ID 83401</a></li>
+                    <li><a>BPAutosales@Imaginary.com</a></li>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <li><a href="https://www.facebook.com/BPAIdaho/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/idahobpa"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/idahobpa/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i class="fa-brands fa-tiktok"></i></a></li>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 </html>
