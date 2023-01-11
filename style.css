@@ -710,8 +710,6 @@ tr rd{
 /* Contact us */
 @media screen and (max-width: 600px){
     .contact-container{
-        justify-content: center;
-        align-items: center;
+        display: block;
     }
-}
 }
