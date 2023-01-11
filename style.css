@@ -182,106 +182,104 @@ footer{
     background-color: #ffffff;
 }
 /*reviews*/   
-.reviews {
-    box-sizing: border-box;
-    text-transform: capitalize;
-    min-height: 100vh;
+.reviews-container{
+    position: relative;
+    width: 800px;
+    min-width: 350px;
+    min-height: 250px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.reviews-wrapper{
+    width: 300%;
+    min-height: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+}
+.slide{
+    width: 800px;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
     justify-content: center;
-    padding-bottom: 70px;
-    background: lightskyblue;
-}
-.slide-container{
-    position: relative;
-    perspective: 1000px;
-}
-.container .slide-container .slide {
-    border-radius: 5px;
-    background: #fff;
-    /* bottom: 10px #3337; */
-    width: 450px;
+    align-items: center;
     padding: 20px;
-    margin: 10px;
+    margin: 0 10px;
+}
+.slide-thumb{
+    width: 70%;
+    height: 250px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     position: relative;
-    transform-style: preserve-3d;
-    animation: slide 0.4s linear;;
 }
-@keyframes slide{
-    0%{
-        transform: rotateX(180deg);
-    }
+.client-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.reviews .slide-container .slide > *{
-    animation: slideContent 0.2s linear 0.4s;
-}
-@keyframes slideContent{
-    0%{
-        transform: scale(0.5);
-    }
-}
-.reviews .slide-container .slide .icon{
+.client-name{
     position: absolute;
-    top: 10px; right: 15px;
-    font-size: 90px;
-    color:#3489db;;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
 }
-.reviews .slide-container .slide .user {
+.slide-body{
+    width: 120%;
+    min-height: 100%;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.review{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+}
+.rating{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-.reviews .slide-container .slide {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
+.star{
+    width: 25px;
+    margin-right: 5px;
 }
-.reviews .slide-container .slide .user .user-info h3{
-    color: #333;
-    font-size: 20px;
-}
-.reviews .slide-container .slide .user .user-info .stars i{
-    color: #3498db;
-    font-size: 15px;
-}
-.reviews .slide-container .slide .text{
-    color: #333;
-    font-size: 14px;
-
-}
-.reviews .slide-container{
-    display: none;
-}
-
-.reviews .slide-container.active{
-    display: block;
-}
-
-.reviews #next,
-.reviews #prev{
+.indicators{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 50px;
-    width: 50px;
-    line-height: 50px;
-    text-align: center;
-    background: #fff;
-    cursor: pointer;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.indicators button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    box-shadow: 0 5px 10px #337;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
 }
-.reviews #next{
-    right: -70px;
-}
-.reviews #next{
-    left: -70px;
-}
-.reviews #next:hover,
-.reviews #prev:hover{
-    background: #333;
-    color: #fff
+button.active{
+    width: 40px;
+    border-radius: 50px;
+    background: #fff;
 }
 /*Inventory*/
 .posts-container img{
@@ -665,7 +663,24 @@ tr rd{
 /* scaling */
 
 /* Index */
-
+@media (max-width: 800px){
+    .reviews-container{
+        width: 50%;
+        margin: auto;
+    }
+    .slide{
+        flex-direction: column;
+    }
+    .slide-thumb{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .slide-body{
+        width: 100%;
+        min-height: auto;
+        margin-left: 0;
+    }
+}
 /* Inventory */
 @media(max-width: 1170px){
     .posts-main-container{

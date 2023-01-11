@@ -1,15 +1,13 @@
-let slides = document.querySelectorAll('.slide-container');
-let index = 0;
+const wrapper = document.querySelector('.reviews-wrapper');
+const indicators = [...document.querySelectorAll('.indicators button')];
 
-function next(){
-  slides[index].classList.remove('active');
-  index = (index + 1) % slides.length;
-  slides[index].classList.add('active');
-}
+let currentTestimonial = 0; // Default 0
 
-function prev(){
-  slides[index].classList.remove('active');
-  index = (index - 1 + slides.length) % slides.length;
-  slides[index].classList.add('active');
-}
-
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active');
+        wrapper.style.marginLeft = `-${100 * i}%`;
+        item.classList.add('active');
+        currentTestimonial = i;
+    })
+})
