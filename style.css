@@ -411,6 +411,7 @@ footer{
     font-size: 15px;
     cursor: pointer;
     border: 1px solid #292929;
+    margin-top: 10%;
     margin-bottom: 40px;
 }
 .read-btn:hover{
