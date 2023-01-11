@@ -421,39 +421,39 @@ footer{
     background: #f0544f;
 }
 /*filter bar*/
-.filter-wrapper{
+.filter-team-container{
     display: flex;
     position: relative;
 }
-.filter-wrapper .sidebar{
+.filter-team-container .sidebar{
     width: 230px;
     background: #002F6C;
     padding: 30px 0px;
     position: relative;
 }
-.filter-wrapper .sidebar h2{
+.filter-team-container .sidebar h2{
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
 }
-.filter-wrapper .sidebar ul li{
+.filter-team-container .sidebar ul li{
     padding: 15px;
     border-bottom: 1px solid #bdb8d7;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     border-top: 1px solid rgba(255,255,255,0.05);
 }    
-.filter-wrapper .sidebar ul li a{
+.filter-team-container .sidebar ul li a{
     color: #bdb8d7;
     display: block;
 }
-.filter-wrapper .sidebar ul li a .fas{
+.filter-team-container .sidebar ul li a .fas{
     width: 25px;
 }
-.filter-wrapper .sidebar ul li:hover{
+.filter-team-container .sidebar ul li:hover{
     background-color: #594f8d;
 }   
-.filter-wrapper .sidebar ul li:hover a{
+.filter-team-container .sidebar ul li:hover a{
     color: #fff;
 }
   /*Contact Us*/
@@ -545,20 +545,122 @@ tr rd{
     color: #fff;
 }
 .team-container{
-    display: grid;
-    justify-content: center;
-    padding: 50px;
-    grid-template-columns: repeat(2, 0fr);
-    grid-gap: 100px;
-}
-.team-container img{
-    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .team-container .our_team{
+    display: flex;
+    width: auto;
+  }
+  .team-container .our_team .team{
+    width: 200px;
     height: auto;
-}
-.person{
-    border: 3px solid;
-    border-color: lightsteelblue;
-}
+    margin: 10px;
+    position: relative;
+  }
+  .team-container .our_team .team img{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .team-container .our_team .team .team_role{
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .team-container .our_team .team_1 .team_role,
+  .team-container .our_team .team_1 .menu,
+  .team-container .our_team .team_1 .info
+  {
+    background: #1abc9c;
+  }
+  .team-container .our_team .team_2 .team_role,
+  .team-container .our_team .team_2 .menu,
+  .team-container .our_team .team_2 .info{
+    background: #3498db;
+  }
+  .team-container .our_team .team_3 .team_role,
+  .team-container .our_team .team_3 .menu,
+  .team-container .our_team .team_3 .info{
+    background: #9b59b6;
+  }
+  .team-container .our_team .team_4 .team_role,
+  .team-container .our_team .team_4 .menu,
+  .team-container .our_team .team_4 .info{
+    background: #e74c3c;
+  }
+  .menu{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .menu > div{
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+   .menu > div:first-child{
+      top: 25%;
+  }
+  .menu > div:last-child{
+    top: 75%;
+  }
+  .info{
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    width: 180px;
+    background: red;
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+    color: #fff;
+    display: none;
+  }
+  .info h4{
+     margin-bottom: 15px;
+  }
+  .info p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #323139;
+  }
+  .info:before{
+    content: "";
+    position: absolute;
+    top: -19px;
+    right: 6px;
+    border: 10px solid;
+  }
+  .team-container .our_team .team_1 .info:before{
+    border-color: transparent transparent  #1abc9c transparent;
+  }
+  .team-container .our_team .team_2 .info:before{
+    border-color: transparent transparent  #3498db transparent;
+  }
+  .team-container .our_team .team_3 .info:before{
+    border-color: transparent transparent  #9b59b6 transparent;
+  }
+  .team-container .our_team .team_4 .info:before{
+    border-color: transparent transparent  #e74c3c transparent;
+  }
+  .menu.active + .info{
+    display: block;
+  }
 
 /* scaling */
 
