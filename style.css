@@ -105,6 +105,7 @@ nav ul li a img{
 }
 footer ul{
     list-style: none;
+    margin-left: -40px;
 }
 footer{
     margin:0;
