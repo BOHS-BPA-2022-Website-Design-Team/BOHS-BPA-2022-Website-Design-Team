@@ -550,52 +550,52 @@ tr rd{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-  }
-  .team-container .our_team{
+}
+.team-container .our_team{
     display: flex;
     width: auto;
-  }
-  .team-container .our_team .team{
+}
+.team-container .our_team .team{
     width: 200px;
     height: auto;
     margin: 10px;
     position: relative;
-  }
-  .team-container .our_team .team img{
+}
+.team-container .our_team .team img{
     width: 100%;
     height: 100%;
     display: block;
-  }
-  .team-container .our_team .team .team_role{
+}
+.team-container .our_team .team .team_role{
     padding: 10px;
     text-align: center;
     color: #fff;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
-  }
-  .team-container .our_team .team_1 .team_role,
-  .team-container .our_team .team_1 .menu,
-  .team-container .our_team .team_1 .info
-  {
+}
+.team-container .our_team .team_1 .team_role,
+.team-container .our_team .team_1 .menu,
+.team-container .our_team .team_1 .info
+{
     background: #1abc9c;
-  }
-  .team-container .our_team .team_2 .team_role,
-  .team-container .our_team .team_2 .menu,
-  .team-container .our_team .team_2 .info{
+}
+.team-container .our_team .team_2 .team_role,
+.team-container .our_team .team_2 .menu,
+.team-container .our_team .team_2 .info{
     background: #3498db;
-  }
-  .team-container .our_team .team_3 .team_role,
-  .team-container .our_team .team_3 .menu,
-  .team-container .our_team .team_3 .info{
+}
+.team-container .our_team .team_3 .team_role,
+.team-container .our_team .team_3 .menu,
+.team-container .our_team .team_3 .info{
     background: #9b59b6;
-  }
-  .team-container .our_team .team_4 .team_role,
-  .team-container .our_team .team_4 .menu,
-  .team-container .our_team .team_4 .info{
+}
+.team-container .our_team .team_4 .team_role,
+.team-container .our_team .team_4 .menu,
+.team-container .our_team .team_4 .info{
     background: #e74c3c;
-  }
-  .menu{
+}
+.menu{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -603,8 +603,8 @@ tr rd{
     height: 50px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  .menu > div{
+}
+.menu > div{
     width: 6px;
     height: 6px;
     background: #fff;
@@ -613,14 +613,14 @@ tr rd{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-  }
-   .menu > div:first-child{
-      top: 25%;
-  }
-  .menu > div:last-child{
+}
+.menu > div:first-child{
+    top: 25%;
+}
+.menu > div:last-child{
     top: 75%;
-  }
-  .info{
+}
+.info{
     position: absolute;
     top: 70px;
     right: 5px;
@@ -631,42 +631,41 @@ tr rd{
     border-radius: 5px;
     color: #fff;
     display: none;
-  }
-  .info h4{
-     margin-bottom: 15px;
-  }
-  .info p{
+}
+.info h4{
+    margin-bottom: 15px;
+}
+.info p{
     font-size: 12px;
     line-height: 20px;
     color: #323139;
-  }
-  .info:before{
+}
+.info:before{
     content: "";
     position: absolute;
     top: -19px;
     right: 6px;
     border: 10px solid;
-  }
-  .team-container .our_team .team_1 .info:before{
+}
+.team-container .our_team .team_1 .info:before{
     border-color: transparent transparent  #1abc9c transparent;
-  }
-  .team-container .our_team .team_2 .info:before{
+}
+.team-container .our_team .team_2 .info:before{
     border-color: transparent transparent  #3498db transparent;
-  }
-  .team-container .our_team .team_3 .info:before{
+}
+.team-container .our_team .team_3 .info:before{
     border-color: transparent transparent  #9b59b6 transparent;
-  }
-  .team-container .our_team .team_4 .info:before{
+}
+.team-container .our_team .team_4 .info:before{
     border-color: transparent transparent  #e74c3c transparent;
-  }
-  .menu.active + .info{
+}
+.menu.active + .info{
     display: block;
-  }
-
+}
 /* scaling */
 
 /* Footer */
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     .footer .inner_footer{
         width: 90%;
     }
@@ -677,7 +676,7 @@ tr rd{
     }
 }
 /* Index */
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
     .reviews-container{
         width: 50%;
         margin: auto;
@@ -696,12 +695,12 @@ tr rd{
     }
 }
 /* Inventory */
-@media(max-width: 1170px){
+@media screen and (max-width: 1170px){
     .posts-main-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media(max-width: 768px){
+@media screen and (max-width: 768px){
     .posts-main-container{
         grid-template-columns: 1fr;
     }
@@ -709,11 +708,10 @@ tr rd{
 /* About Us */
 
 /* Contact us */
-@media (max-width: 600px){
-    .contact-left{
-        padding: 0;
+@media screen and (max-width: 600px){
+    .contact-container{
+        justify-content: center;
+        align-items: center;
     }
-    .contact-right{
-        padding: 0;
 }
 }
