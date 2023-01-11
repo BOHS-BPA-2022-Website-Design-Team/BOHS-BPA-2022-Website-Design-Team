@@ -515,3 +515,22 @@ tr rd{
     border: 3px solid;
     border-color: lightsteelblue;
 }
+
+/* scaling */
+
+/* Index */
+
+/* Inventory */
+@media(max-width: 1170px){
+    .posts-main-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 768px){
+    .posts-main-container{
+        grid-template-columns: 1fr;
+    }
+}
+/* About Us */
+
+/* Contact us */
