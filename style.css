@@ -164,7 +164,7 @@ footer a{
     padding-left: 8px;
 }
 
-.footer-col .social-links{
+.footer-col .social-links ul{
     display: flex;
 }
 
