@@ -101,14 +101,6 @@ nav ul li a img{
     padding: 15px 20px;
 }
 /* footer */
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-footer ul{
-    list-style: none;
-    margin-left: -40px;
-}
 footer{
     margin:0;
     padding:0;
@@ -121,6 +113,17 @@ footer{
     width: 20%;
     padding: 0 15px;
 }
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+footer ul{
+    list-style: none;
+    margin-left: -40px;
+}
+footer a{
+    color: #fff;
+  }
 .footer-col img{
     max-width: 200px;
     height: auto;
