@@ -711,3 +711,11 @@ tr rd{
 /* About Us */
 
 /* Contact us */
+@media (max-width: 600px){
+    .contact-left{
+        flex-basis: 50%;
+    }
+    .contact-right{
+        flex-basis: 30%;
+}
+}
