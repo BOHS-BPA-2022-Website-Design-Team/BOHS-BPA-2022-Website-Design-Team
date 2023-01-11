@@ -199,7 +199,7 @@ footer{
 .container .slide-container .slide {
     border-radius: 5px;
     background: #fff;
-    bottom: 10px #3337;
+    /* bottom: 10px #3337; */
     width: 450px;
     padding: 20px;
     margin: 10px;
