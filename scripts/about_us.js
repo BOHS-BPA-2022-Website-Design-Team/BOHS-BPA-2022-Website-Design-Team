@@ -6,4 +6,3 @@ Array.from(menu_items).forEach(function(menu){
     this.classList.toggle("active")
   });
 });
-</script>
