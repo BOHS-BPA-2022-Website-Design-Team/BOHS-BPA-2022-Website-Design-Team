@@ -293,7 +293,7 @@ button.active{
 .posts-container{
     line-height: 1.5;
     margin: 0 auto;
-    padding-left: 250px;
+    padding-left: 20%;
 }    
 .posts-container > h2{
     text-align: center;
@@ -426,13 +426,11 @@ button.active{
 /*filter bar*/
 .filter-container{
     display: flex;
-    position: relative;
-}
-.filter-container .sidebar{
+    position: fixed;
+    margin-top: 10%;
     width: 230px;
     background: #002F6C;
     padding: 30px 0px;
-    position: relative;
 }
 .filter-container .sidebar h2{
     color: #fff;
@@ -713,9 +711,9 @@ tr rd{
 /* Contact us */
 @media (max-width: 600px){
     .contact-left{
-        flex-basis: 50%;
+        padding: 0;
     }
     .contact-right{
-        flex-basis: 30%;
+        padding: 0;
 }
 }
