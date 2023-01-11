@@ -667,6 +667,17 @@ tr rd{
 
 /* scaling */
 
+/* Footer */
+@media (max-width: 600px){
+    .footer .inner_footer{
+        width: 90%;
+    }
+    .inner_footer .logo_container,
+    .inner_footer .footer_third{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
 /* Index */
 @media (max-width: 800px){
     .reviews-container{
