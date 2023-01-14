@@ -180,11 +180,12 @@ footer a{
 .reviews-container{
     background-color: #804c44;
     position: relative;
-    width: 90%;
+    width: 100%;
     min-width: 350px;
     min-height: 250px;
     padding-bottom: 40px;
     overflow: hidden;
+    background: #804c44;
 }
 .reviews-wrapper{
     width: 400%;
