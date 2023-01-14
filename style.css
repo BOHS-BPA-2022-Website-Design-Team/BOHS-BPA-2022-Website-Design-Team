@@ -3,7 +3,6 @@
     font-family: 'Gill Sans', sans-serif;
     font-style : normal;
     font-weight : 400;
-    background-color: #804c44;
 }
 /* navbar */ 
 nav {
@@ -179,6 +178,7 @@ footer a{
 }
 /*reviews*/   
 .reviews-container{
+    background-color: #804c44;
     position: relative;
     width: 90%;
     min-width: 350px;
