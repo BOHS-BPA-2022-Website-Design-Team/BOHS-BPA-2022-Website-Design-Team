@@ -65,8 +65,8 @@ nav ul li a img{
     background: url("images/Team.jpg");
     background-size: cover;
 } 
-.team-banner div{
-    padding-top: 900px;
+.team-banner .text{
+    padding-top: 1200px;
 }
 .homepage-banner {
     width: 100%;
