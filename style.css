@@ -306,7 +306,8 @@ button.active{
 .sidebar .filter-container .category-head ul {
     width: 100px;
     list-style-type: none;
-    margin-top: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     padding-right: 100px;
     flex-wrap: wrap;
     justify-content: flex-start;
