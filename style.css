@@ -536,8 +536,9 @@ tr rd{
     justify-content: center;
 }
 .team-info h1{
-    color: rgb(0, 0, 0);
-}
+    color: #fff;
+    padding: 100px;
+    background-color: #202c44;
 .team-container{
     display: flex;
     align-items: center;
