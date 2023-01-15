@@ -422,7 +422,6 @@ button.active{
     display: flex;
     position: absolute;
     width: 230px;
-    height: 110%;
     background: #002F6C;
 }
 .filter-container .sidebar h2{
