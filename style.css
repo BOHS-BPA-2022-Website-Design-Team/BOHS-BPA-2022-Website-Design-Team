@@ -64,6 +64,9 @@ nav ul li a img{
     background: url("images/Team.jpg");
     background-size: cover;
 } 
+.team-banner div{
+    padding-top: 150px;
+}
 .homepage-banner {
     width: 100%;
     background: url("images/10836482_MotionElements_economics-chart_converted_576180-640x360-15s-q2.gif");
