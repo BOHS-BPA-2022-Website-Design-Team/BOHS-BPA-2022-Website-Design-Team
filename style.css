@@ -527,6 +527,12 @@ tr rd{
     padding-top: 20px;   
 }
 /*about Us*/
+.team-banner div {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    padding: 40px 15px;
+}
 .team-info{
     display: flex;
     background-color: lightsteelblue;
