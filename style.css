@@ -528,7 +528,7 @@ tr rd{
 }
 /*about Us*/
 .team-info{
-    display: flex;
+    display: block;
     background-color: lightsteelblue;
     height: 500px;
     width: 100%;
