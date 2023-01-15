@@ -189,6 +189,7 @@ footer a{
 }
 .reviews-wrapper{
     width: 400%;
+    padding-top: 3%;
     min-height: 100%;
     display: flex;
     justify-content: space-between;
