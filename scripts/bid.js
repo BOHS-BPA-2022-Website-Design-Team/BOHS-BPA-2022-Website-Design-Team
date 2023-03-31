@@ -1,11 +1,13 @@
 let popup = document.querySelector(".popup-wrapper");
 let popupForm = document.querySelector(".popup-form");
-let popupBtn = document.querySelector(".popup-open");
+let popupBtn = document.querySelectorAll(".popup-open");
 let popupClose = document.querySelector(".close-btn");
 
-popupBtn.addEventListener("click", (e) => {
-  e.preventDefault;
-  showPopup();
+popupBtn.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault;
+        showPopup();
+      });          
 });
 
 popupClose.addEventListener("click", (e) => {
@@ -26,14 +28,14 @@ popup.addEventListener("click", (e) => {
 
 function showPopup() {
   popup.classList.add("active");
-  bodyScroll();
+//   bodyScroll();
 }
 
 function removePopup() {
   popup.classList.remove("active");
-  bodyScroll();
+//   bodyScroll();
 }
 
-function bodyScroll() {
-  document.body.classList.toggle("no-scroll");
-}
+// function bodyScroll() {
+//   document.body.classList.toggle("no-scroll");
+// }

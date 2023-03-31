@@ -551,7 +551,7 @@ aside {
 .close-btn {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 40px;
   background: none;
   border: none;
   padding: 0;
