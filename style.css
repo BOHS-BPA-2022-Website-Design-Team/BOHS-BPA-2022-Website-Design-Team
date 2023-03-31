@@ -75,7 +75,7 @@ nav ul li a img{
     font-size: 80px;
     color: #fff;
     text-align: center;
-    padding: 40px 15px;
+    padding-bottom: 40px;
 }
 .big-text {
     font-size: 130px;
@@ -97,6 +97,75 @@ nav ul li a img{
     color: #fff;
     padding: 15px 20px;
 }
+/* homepage image slider */
+.image-slide-container {
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+  }
+  .image-slide-container div {
+    height: 400px;
+    width: 300px;
+  }
+  .car1 {
+    background-image: url("images/Resized Pictures/Car1_300x300.jpg");
+  }
+  .car2 {
+    background-image: url("images/Resized Pictures/Car2_300x300.jpg");
+  }
+  .car3 {
+    background-image: url("images/Resized Pictures/Car3_300x300.jpg");
+  }
+  .car4 {
+    background-image: url("images/Resized Pictures/Car4_square.jpg");
+  }
+  .car5 {
+    background-image: url("images/Resized Pictures/Car5_300x300.jpg");
+  }
+  .car6 {
+    background-image: url("images/Resized Pictures/Car6_300x300.jpg");
+  }
+  .car7 {
+    background-image: url("images/Resized Pictures/Car8_300x300.jpg");
+  }
+  .car8 {
+    background-image: url("images/Resized Pictures/Car11_300x300.jpg");
+  }
+  .car10 {
+    background-image: url("images/Resized Pictures/DesertTruck_300x300.jpg");
+  }
+  .car12 {
+    background-image: url("images/Resized Pictures/funny-cars-46-5cff8f9f19fb3__700_300x300.jpg");
+  }
+  .car13 {
+    background-image: url("images/Resized Pictures/Car13_squared.jpg");
+  }
+  .car14 {
+    background-image: url("images/Resized Pictures/PirateBeetle_300x300.jpg");
+  }
+  .car15 {
+    background-image: url("images/Resized Pictures/ridiculous-cars-3_300x300.jpg");
+  }
+  .car16 {
+    background-image: url("images/Resized Pictures/TheFlyingTortise_300x300.jpg");
+  }
+  .car17 {
+    background-image: url("images/Resized Pictures/TheFoodcycle_300x300.jpg");
+  }
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-4200px, 0, 0); 
+    }
+  }
+  .image-slide-container div {
+    height: 300px;
+    min-width: 300px;
+    border: 25px solid lightskyblue;
+    animation: slide 15s linear infinite;
+  }
 /* footer */
 footer{
     margin:0;
