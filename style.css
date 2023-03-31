@@ -161,10 +161,10 @@ nav ul li a img{
     }
   }
   .image-slide-container div {
+    margin: 30px;
     height: 300px;
     min-width: 300px;
-    border: 25px solid lightskyblue;
-    animation: slide 15s linear infinite;
+    animation: slide 45s linear infinite;
   }
 /* footer */
 footer{
@@ -513,6 +513,7 @@ aside {
   pointer-events: none;
   padding: 10px 20px;
   transition: opacity 0.3s ease-in-out;
+  backdrop-filter: blur(20px);
 }
 .popup-wrapper.active {
   opacity: 1;
@@ -682,6 +683,9 @@ label{
     display: block;
     color: #1c00b5;
 }
+.input-group input{
+    width: 100%;
+}
 button{
     background: #1c00b5;
     width: 100px;
@@ -739,10 +743,13 @@ tr rd{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 350px;
 }
 .team-container .our_team{
     display: flex;
     width: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 .team-container .our_team .team{
     width: 200px;
@@ -760,6 +767,7 @@ tr rd{
     text-align: center;
     color: #FAF9F6;
     font-size: 12px;
+    height: 15%;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -851,6 +859,21 @@ tr rd{
 .menu.active + .info{
     display: block;
 }
+
+/* thank you */
+
+#thanks {
+    justify-content: center;
+    margin: 10%;
+    text-align: center;
+    display: flex;
+}
+
+#thanks h1 {
+    color: lightsteelblue;
+    font-size: 5rem;
+}
+
 /* scaling */
 
 /* Footer */
