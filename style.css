@@ -285,15 +285,25 @@ button.active{
     background: #fff;
 }
 /*Inventory*/
-.posts-container img{
-    max-width: 300px;
-    height: 300px;
+.inventory{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 225px auto;
+}
+aside {
+    grid-column-start: 1;
+    background: #002F6C;
 }
 .posts-container{
+    grid-column-start: 2;
     line-height: 1.5;
-    margin: 0 auto;
-    padding-left: 20%;
+    margin-top: 75px;
+    margin-bottom: 30px;
 }    
+.posts-container img {
+    width: 100%;
+    height: auto;
+}
 .posts-container > h2{
     text-align: center;
     padding: 10px 0;
@@ -339,11 +349,11 @@ button.active{
     color: #222;
 }
 .posts-main-container{
+    grid-area: content;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 0fr);
-    grid-gap: 30px;
-    padding-right: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 .posts-main-container > div{
     box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
@@ -381,6 +391,7 @@ button.active{
 }
 .post-content{
     padding: 25px;
+    height: 245px;
 }
 .post-content-top{
     max-width: 600px;
@@ -406,30 +417,118 @@ button.active{
     font-size: 15px;
     line-height: 1.8;
 }
-.read-btn{
-    border: none;
-    padding: 8px 15px;
-    display: block;
-    margin: 5px auto;
-    font-size: 15px;
-    cursor: pointer;
-    border: 1px solid #292929;
-    margin-top: 10%;
-    margin-bottom: 40px;
+
+/* bid poppup */
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
-.read-btn:hover{
-    background: #f6f6f6;
+
+.bid {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
-.active{
-    background: #f0544f;
+.popup-wrapper {
+  position: fixed;
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.685);
+  z-index: 9998;
+  opacity: 0;
+  pointer-events: none;
+  padding: 10px 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+.popup-wrapper.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.popup {
+  padding: 22px 25px;
+  max-width: 380px;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #12192c;
+  border-radius: 15px;
+}
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popup-form__input {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.popup-form__input:required {
+    border-left: red solid 6px;
+}
+.popup-form__input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  border: 0;
+  width: 30px;
+  height: 55px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition: transform 0.3s, opacity 0.3s;
+  -moz-transition: transform 0.3s, opacity 0.3s;
+  -ms-transition: transform 0.3s, opacity 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
+}
+.close-btn:before,
+.close-btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 1.5px;
+  transform: translateY(-50%);
+}
+.close-btn:before {
+  transform: translateY(-50%) rotate(45deg);
+}
+.close-btn:after {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.close-btn:hover {
+  transform: scale(1.1);
+}
+.close-btn:active {
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+.popup-form__input {
+  margin: 20px;
+  padding: 12px 20px;
+  width: 80%;
 }
 /*filter bar*/
-.filter-container{
-    display: flex;
-    position: absolute;
-    width: 230px;
-    background: #002F6C;
-}
 .filter-container .sidebar h2{
     color: #fff;
     text-transform: uppercase;
@@ -536,13 +635,25 @@ tr rd{
     background-color: lightsteelblue;
     height: 500px;
     width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 .team-info h1{
     color: #fff;
+    display: flex;
     padding: 100px;
     background-color: #202c44;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.team-info a{
+    color: #fff;
+    padding: 25px;
+    background-color: #666;
+    border-radius: 10px;
+    text-decoration: none;
 }
 .team-info h2{
     font-size: 20px;
