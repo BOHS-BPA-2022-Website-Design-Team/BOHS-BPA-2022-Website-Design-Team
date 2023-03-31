@@ -15,6 +15,7 @@ function filterPosts(item){
             allCategoryPosts[i].style.display = "none";
         }
     }
+    window.scrollTo(0, 25);
 }
 
 function changeActivePosition(activeItem){

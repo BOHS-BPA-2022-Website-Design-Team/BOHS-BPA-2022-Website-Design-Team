@@ -28,14 +28,17 @@ popup.addEventListener("click", (e) => {
 
 function showPopup() {
   popup.classList.add("active");
-//   bodyScroll();
+  var element = document.getElementById("all");
+  element.click();
+  bodyScroll();
 }
 
 function removePopup() {
   popup.classList.remove("active");
-//   bodyScroll();
+  bodyScroll();
 }
 
-// function bodyScroll() {
-//   document.body.classList.toggle("no-scroll");
-// }
+function bodyScroll() {
+  document.body.classList.toggle("no-scroll");
+  window.scrollTo(0, 200); 
+}
