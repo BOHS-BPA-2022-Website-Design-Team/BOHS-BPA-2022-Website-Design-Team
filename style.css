@@ -24,7 +24,7 @@ nav a img{
 }
 nav.sticky{
     padding: 5px 85px;
-    background: #fff;
+    background: #FAF9F6;
 }
 nav.logo{
     position: relative;
@@ -43,7 +43,7 @@ nav ul li a{
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: #FAF9F6;
     padding-right: 2px;
     transition: 0.6s;
 }
@@ -59,7 +59,7 @@ nav ul li a img{
     background-size: cover;
     height: 100vh;
     font-size: 80px;
-    color: #fff;
+    color: #FAF9F6;
     text-align: center;
     padding: 40px 15px;
     background: url("images/Team.jpg");
@@ -73,7 +73,7 @@ nav ul li a img{
     background: url("images/10836482_MotionElements_economics-chart_converted_576180-640x360-15s-q2.gif");
     background-size: cover;
     font-size: 80px;
-    color: #fff;
+    color: #FAF9F6;
     text-align: center;
     padding-bottom: 40px;
 }
@@ -84,7 +84,7 @@ nav ul li a img{
 }
 .homepage-banner a {
     display: inline-block;
-    background: #fff;
+    background: #FAF9F6;
     color: #36465d;
     text-transform: uppercase;
     padding: 15px;
@@ -94,7 +94,7 @@ nav ul li a img{
 }
 .homepage-banner a:hover {
     background: #333;
-    color: #fff;
+    color: #FAF9F6;
     padding: 15px 20px;
 }
 /* homepage image slider */
@@ -188,7 +188,7 @@ footer ul{
     margin-left: -40px;
 }
 footer a{
-    color: #fff;
+    color: #FAF9F6;
   }
 .footer-col img{
     max-width: 200px;
@@ -221,7 +221,7 @@ footer a{
     color: #666;
     text-decoration: none;
     font-weight: 300;
-    color: #fff;
+    color: #FAF9F6;
     display: block;
     transition: all 0.3s ease;
 }
@@ -273,7 +273,7 @@ footer a{
 .slide{
     width: 90%;
     min-height: 100%;
-    background: #fff;
+    background: #FAF9F6;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -303,7 +303,7 @@ footer a{
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     padding: 5px 20px;
-    background: #fff;
+    background: #FAF9F6;
     text-transform: capitalize;
     font-size: 14px;
 }
@@ -343,7 +343,7 @@ footer a{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #FAF9F6;
     cursor: pointer;
     margin-left: 5px;
     transition: .5s;
@@ -351,7 +351,7 @@ footer a{
 button.active{
     width: 40px;
     border-radius: 50px;
-    background: #fff;
+    background: #FAF9F6;
 }
 /*Inventory*/
 .inventory{
@@ -403,7 +403,7 @@ aside {
     justify-content: center;
     background: #a8a8a8;
     padding: 20px;
-    color: #fff;
+    color: #FAF9F6;
     margin: 5px;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -436,7 +436,7 @@ aside {
     left: 20px;
     text-transform: uppercase;
     font-size: 13px;
-    color: #fff;
+    color: #FAF9F6;
     padding: 4px 10px;
     border-radius: 2px;
 }
@@ -465,7 +465,7 @@ aside {
 .post-content-top{
     max-width: 600px;
     background: #80ced7;
-    color: #fff;
+    color: #FAF9F6;
     opacity: 0.8;
     padding: 5px 0 5px 15px;
 }
@@ -502,7 +502,7 @@ aside {
 }
 .popup-wrapper {
   position: fixed;
-  color: #fff;
+  color: #FAF9F6;
   top: 0;
   left: 0;
   width: 100%;
@@ -575,7 +575,7 @@ aside {
   transform: translateY(-50%);
   width: 2px;
   height: 30px;
-  background-color: #fff;
+  background-color: #FAF9F6;
   border-radius: 1.5px;
   transform: translateY(-50%);
 }
@@ -599,7 +599,7 @@ aside {
 }
 /*filter bar*/
 .filter-container .sidebar h2{
-    color: #fff;
+    color: #FAF9F6;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
@@ -621,28 +621,36 @@ aside {
     background-color: #594f8d;
 }   
 .filter-container .sidebar ul li:hover a{
-    color: #fff;
+    color: #FAF9F6;
 }
   /*Contact Us*/
 .contact-container{
     font-size: 20px;
-    width: 80%;
+    max-width: 80%;
     margin: 50px auto;
 }
 .contact-box{
-    background: #fff;
+    background: #FAF9F6;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-left{
     background: lightskyblue;
-    flex-basis: 60%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     padding: 40px 60px;
+    height: 600px;
+    width: auto;
 }
 .contact-right{
-    flex-basis: 40%;
     padding: 40px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     background: #1c00b5;
-    color: #fff;
+    color: #FAF9F6;
+    height: 600px;
+    width: auto;
 }
 .contact-container h1{
     margin-bottom: 10px;
@@ -678,7 +686,7 @@ button{
     background: #1c00b5;
     width: 100px;
     border: none;
-    color: #fff;
+    color: #FAF9F6;
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
@@ -709,7 +717,7 @@ tr rd{
     justify-content: center;
 }
 .team-info h1{
-    color: #fff;
+    color: #FAF9F6;
     display: flex;
     padding: 100px;
     background-color: #202c44;
@@ -718,7 +726,7 @@ tr rd{
     justify-content: center;
 }
 .team-info a{
-    color: #fff;
+    color: #FAF9F6;
     padding: 25px;
     background-color: #666;
     border-radius: 10px;
@@ -750,7 +758,7 @@ tr rd{
 .team-container .our_team .team .team_role{
     padding: 10px;
     text-align: center;
-    color: #fff;
+    color: #FAF9F6;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -788,7 +796,7 @@ tr rd{
 .menu > div{
     width: 6px;
     height: 6px;
-    background: #fff;
+    background: #FAF9F6;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -810,7 +818,7 @@ tr rd{
     padding: 10px;
     text-align: right;
     border-radius: 5px;
-    color: #fff;
+    color: #FAF9F6;
     display: none;
 }
 .info h4{
@@ -889,8 +897,17 @@ tr rd{
 /* About Us */
 
 /* Contact us */
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1000px){
     .contact-box{
         display: block;
+    }
+    .contact-left{
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0;
+    }
+    .contact-right{
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
     }
 }

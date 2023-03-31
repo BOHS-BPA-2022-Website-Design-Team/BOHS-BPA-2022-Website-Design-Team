@@ -30,15 +30,8 @@ function showPopup() {
   popup.classList.add("active");
   var element = document.getElementById("all");
   element.click();
-  bodyScroll();
 }
 
 function removePopup() {
   popup.classList.remove("active");
-  bodyScroll();
-}
-
-function bodyScroll() {
-  document.body.classList.toggle("no-scroll");
-  window.scrollTo(0, 200); 
 }
