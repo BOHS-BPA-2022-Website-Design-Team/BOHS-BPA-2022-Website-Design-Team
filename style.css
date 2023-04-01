@@ -49,6 +49,9 @@ nav ul li a{
 }
 nav ul li a img{
     height: 4em;
+}
+nav ul li a .small{
+    height: 6.5em;
 }  
   nav.sticky .logo,
   nav.sticky ul li a{
