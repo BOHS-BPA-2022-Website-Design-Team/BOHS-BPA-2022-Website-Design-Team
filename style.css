@@ -59,14 +59,10 @@ nav ul li a .small{
 }  
 /* banners */ 
 .team-banner{
-    height: 200vh;
-    color: #FAF9F6;
-    background: url(images/Team.jpg);
+    background: url(images/TeamFinalFinal.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
-} 
-.team-banner .text{
-    padding-top: 490px;
+    height: 100vh;
 }
 .homepage-banner {
     width: 100%;
@@ -167,7 +163,7 @@ nav ul li a .small{
     margin: 30px;
     height: 300px;
     min-width: 300px;
-    animation: slide 45s linear infinite;
+    animation: slide 60s linear infinite;
   }
 /* footer */
 footer{
