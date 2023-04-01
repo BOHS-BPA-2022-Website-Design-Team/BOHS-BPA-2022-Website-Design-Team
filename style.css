@@ -56,14 +56,11 @@ nav ul li a img{
 }  
 /* banners */ 
 .team-banner{
-    background-size: cover;
     height: 100vh;
-    font-size: 80px;
     color: #FAF9F6;
-    text-align: center;
-    padding: 40px 15px;
-    background: url("images/Team.jpg");
+    background: url(images/Team.jpg);
     background-size: cover;
+    background-position: center;
 } 
 .team-banner .text{
     padding-top: 490px;
