@@ -59,9 +59,8 @@ nav ul li a .small{
 }  
 /* banners */ 
 .team-banner{
-    height: 175vh;
-    color: #FAF9F6;
-    background: url(images/Team.jpg);
+    height: 200vh;
+    background: #986457;
     background-size: cover;
     background-position: bottom;
 } 
