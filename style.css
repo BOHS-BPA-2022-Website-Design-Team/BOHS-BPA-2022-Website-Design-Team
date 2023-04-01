@@ -214,7 +214,7 @@ footer a, h2{
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
-.footer-col ul li a, h2{
+.footer-col ul li a, footer-col ul li h2{
     font-size: 16px;
     text-transform: capitalize;
     color: #666;
@@ -313,7 +313,7 @@ footer a, h2{
     padding-bottom: 50px;
 }
 .review{
-    font-size: 20px;
+    font-size: 25px;
     line-height: 30px;
     margin-top: 30px;
 }
@@ -500,14 +500,15 @@ aside {
     padding-right: 5px;
 }
 .post-content h2{
+    color: #000;
     font-size: 22px;
     padding: 12px 0;
     font-weight: 400;
 }
 .post-content p{
     opacity: 0.7;
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 25px;
+    line-height: 1;
 }
 
 /* bid poppup */
@@ -930,14 +931,50 @@ tr rd{
         flex-direction: column;
     }
     .slide-thumb{
-        width: 100%;
+        width: 400px;
         border-radius: 10px;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+    }
+    .client-img{
+        width: 100vh;
+        height: 100vh;
+        object-fit: cover;
     }
     .slide-body{
         width: 100%;
         min-height: auto;
         margin-left: 0;
     }
+}
+@media screen and (max-width: 450px){
+    .review {
+        font-size: 45px;
+        max-width: 500px;
+        line-height: 43px;
+    }
+    .slide{
+        height: 375px;
+    }
+    nav ul li a img, nav a img{
+        height: 6em;
+        padding: 0;
+    }
+    nav ul li a .small{
+        height: 8.5em;
+    } 
+    nav {
+        padding: 0px;
+        padding-left: 25px;
+    }
+}
+/* about us */
+@media screen and (max-width: 600px){
+    .team-banner {
+        height: 65vh;
+    }
+
 }
 /* Inventory */
 @media screen and (max-width: 1170px){
@@ -950,8 +987,50 @@ tr rd{
         grid-template-columns: 1fr;
     }
 }
-/* About Us */
-
+@media screen and (max-width: 450px){
+    .post-content p{
+        font-size: 34px;
+    }
+    .post-content{
+        display: flex;
+        flex-direction: column;
+        height: 475px;
+    }
+    .post-content h2{
+        font-size: 34px;
+        line-height: .05;
+        padding: 0;
+    }
+    .posts-container > p {
+        display: none;
+    }
+    .posts-container > h3 {
+        border-bottom: 3px solid #666;
+    }
+    .sidebar .filter-container .category-title {
+        font-size: 25px;
+        padding: 30px;
+        background-color: lightgrey;
+        color: #666;
+        font-weight: 900;
+    }
+    button {
+        font-size: 2em;
+        width: 200px;
+        height: 55px;
+    }
+    .popup-form input {
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 3em;
+    }
+    .popup-form input:required {
+        border-left: red solid 12px;
+    }
+    .popup-form input:required:valid {
+        border-left: green solid 12px;
+    }
+}
 /* Contact us */
 @media screen and (max-width: 1000px){
     .contact-box{
@@ -965,5 +1044,28 @@ tr rd{
       border-top-right-radius: 0px;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
+    }
+}
+@media screen and (max-width: 450px){
+    .input-group input {
+        font-size: 2em;
+    }
+
+    .contact-right {
+        flex-direction: column;
+        font-size: 37px;
+        height: 800px;
+    }
+    .contact-left{
+        height: 875px;
+    }
+    textarea {
+        font-size: 1.5em;
+    }
+    label {
+        font-size: 40px;
+    }
+    #thanks {
+        margin-bottom: 175px;
     }
 }
