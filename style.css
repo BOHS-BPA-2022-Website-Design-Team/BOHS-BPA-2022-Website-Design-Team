@@ -60,7 +60,8 @@ nav ul li a .small{
 /* banners */ 
 .team-banner{
     height: 200vh;
-    background: #986457;
+    color: #FAF9F6;
+    background: url(images/Team.jpg);
     background-size: cover;
     background-position: bottom;
 } 
@@ -75,6 +76,9 @@ nav ul li a .small{
     color: #FAF9F6;
     text-align: center;
     padding-bottom: 40px;
+}
+.homepage-banner div{
+    padding-top: 50px;
 }
 .big-text {
     font-size: 130px;
