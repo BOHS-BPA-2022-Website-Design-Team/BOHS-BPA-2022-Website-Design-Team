@@ -56,11 +56,11 @@ nav ul li a img{
 }  
 /* banners */ 
 .team-banner{
-    height: 100vh;
+    height: 175vh;
     color: #FAF9F6;
     background: url(images/Team.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 } 
 .team-banner .text{
     padding-top: 490px;
@@ -545,7 +545,6 @@ aside {
     border-left: green solid 6px;
 }
 
-
 .close-btn {
   position: absolute;
   top: 0;
@@ -628,7 +627,7 @@ aside {
     margin: 50px auto;
 }
 .contact-box{
-    background: #FAF9F6;
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
