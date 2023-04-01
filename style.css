@@ -404,6 +404,7 @@ aside {
     background: #a8a8a8;
     padding: 20px;
     color: #FAF9F6;
+    letter-spacing: 2px;
     margin: 5px;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -440,6 +441,29 @@ aside {
     padding: 4px 10px;
     border-radius: 2px;
 }
+
+.fa-car-side {
+    color: #000;
+}
+.fa-truck-pickup {
+    color: #FFC0CB;
+}
+.fa-van-shuttle {
+    color: #f0544f;
+}
+.fa-sack-dollar {
+    color: #2c2a4a;
+}
+.fa-face-smile {
+    color: #00a7ea;
+}
+.fa-hippo {
+    color: #a1e44d;
+}
+.fa-plane {
+    color: #FFD700;
+}
+
 .fun .category-name{
     background: #00a7ea;
 }
