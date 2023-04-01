@@ -188,6 +188,8 @@ footer ul{
 }
 footer a, h2{
     color: #FAF9F6;
+    font-weight: 300;
+    font-size: 20px;
   }
 .footer-col img{
     max-width: 200px;
