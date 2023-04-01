@@ -911,7 +911,7 @@ tr rd{
 /* scaling */
 
 /* Footer */
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
     .footer .inner_footer{
         width: 90%;
     }
@@ -922,7 +922,7 @@ tr rd{
     }
 }
 /* Index */
-@media screen and (max-width: 800px){
+@media only screen and (max-width: 800px){
     .reviews-container{
         width: 50%;
         margin: auto;
@@ -948,7 +948,7 @@ tr rd{
         margin-left: 0;
     }
 }
-@media screen and (max-width: 450px){
+@media only screen and (max-width: 450px){
     .review {
         font-size: 45px;
         max-width: 500px;
@@ -970,24 +970,26 @@ tr rd{
     }
 }
 /* about us */
-@media screen and (max-width: 600px){
+@media only screen and (max-width: 600px){
     .team-banner {
         height: 65vh;
     }
-
+    .info p {
+        font-size: 25px;
+    }
 }
 /* Inventory */
-@media screen and (max-width: 1170px){
+@media only screen and (max-width: 1170px){
     .posts-main-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
     .posts-main-container{
         grid-template-columns: 1fr;
     }
 }
-@media screen and (max-width: 450px){
+@media only screen and (max-width: 450px){
     .post-content p{
         font-size: 34px;
     }
@@ -1032,7 +1034,7 @@ tr rd{
     }
 }
 /* Contact us */
-@media screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px){
     .contact-box{
         display: block;
     }
@@ -1046,7 +1048,7 @@ tr rd{
       border-bottom-right-radius: 20px;
     }
 }
-@media screen and (max-width: 450px){
+@media only screen and (max-width: 450px){
     .input-group input {
         font-size: 2em;
     }
