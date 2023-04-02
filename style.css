@@ -75,9 +75,6 @@ nav ul li a .small{
     text-align: center;
     padding-bottom: 40px;
 }
-.homepage-banner div{
-    padding-top: 50px;
-}
 .big-text {
     font-size: 130px;
     font-weight:800;
@@ -286,7 +283,7 @@ footer a, h2{
     margin: 0 10px;
 }
 .slide-thumb{
-    width: 300px;
+    width: 400px;
     height: auto;
     overflow: hidden;
     border-radius: 15px;
@@ -899,7 +896,7 @@ tr rd{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25% 0px;
+    padding-bottom: 60%;
 }
 #thanks h4 {
     color: #000;
