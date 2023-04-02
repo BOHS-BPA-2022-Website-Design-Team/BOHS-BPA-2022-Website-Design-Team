@@ -1,7 +1,7 @@
 const wrapper = document.querySelector('.reviews-wrapper');
 const indicators = [...document.querySelectorAll('.indicators button')];
 
-let currentTestimonial = 0; // Default 0
+let currentTestimonial = 1; // Default 0
 
 indicators.forEach((item, i) => {
     item.addEventListener('click', () => {
