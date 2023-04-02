@@ -15,7 +15,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 40px 85px;
-    z-index: 100000;
+    z-index: 5;
     transition: 0.6s;
 }
 nav a img{
@@ -524,6 +524,10 @@ aside {
     justify-content: center;
     align-items: center;
 }
+.popup-open:hover, .contactbtn:hover{
+    background: #336bb3;
+    box-shadow: 0px 0px 10px #888;
+}
 .popup-wrapper {
   position: fixed;
   color: #FAF9F6;
@@ -571,7 +575,6 @@ aside {
 .popup-form input:required:valid {
     border-left: green solid 6px;
 }
-
 .close-btn {
   position: absolute;
   top: 0;
@@ -611,6 +614,7 @@ aside {
 }
 .close-btn:hover {
   transform: scale(1.1);
+  background: none;
 }
 .close-btn:active {
   opacity: 0.8;
@@ -720,10 +724,6 @@ button{
     margin-top: 20px;
     box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.03);
 }
-button:hover {
-    background: #336bb3;
-    box-shadow: 0px 0px 10px #888;
-  }
 .contact-left h3{
     color: #1c00b5;
     font-weight: 600;
