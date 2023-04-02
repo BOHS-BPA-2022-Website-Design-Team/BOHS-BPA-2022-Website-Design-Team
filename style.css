@@ -283,9 +283,9 @@ footer a, h2{
     margin: 0 10px;
 }
 .slide-thumb{
-    width: 400px;
+    width: 95%;
     height: auto;
-    overflow: hidden;
+    overflow: clip;
     border-radius: 15px;
     position: relative;
 }
