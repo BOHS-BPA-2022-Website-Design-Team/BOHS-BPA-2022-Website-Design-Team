@@ -1,4 +1,4 @@
-const wrapper = document.querySelector('.reviews-wrapper');
+const wrapper = document.querySelector('.reviews-container');
 const indicators = [...document.querySelectorAll('.indicators button')];
 let currentTestimonial = 0; // Default 0
 let counter = 0;
