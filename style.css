@@ -922,6 +922,15 @@ tr rd{
     }
 }
 /* Index */
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+  .slide-thumb{
+      width: 45em;
+      padding-top: 40px;
+  }
+  .slide-thumb img {
+      border-radius: 25px;
+  }
+}
 @media only screen and (max-width: 800px){
     .reviews-container{
         width: 50%;
