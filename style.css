@@ -73,7 +73,8 @@ nav ul li a .small{
     font-size: 80px;
     color: #FAF9F6;
     text-align: center;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .big-text {
     font-size: 130px;
